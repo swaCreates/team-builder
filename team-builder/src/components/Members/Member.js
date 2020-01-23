@@ -1,13 +1,14 @@
 import React from 'react'
+import {Card} from 'reactstrap';
 
-function Member() {
+function Member(props) {
 
 
 
     return (
-        <div>
-            
-        </div>
+        <Card className='card'>
+           
+        </Card>
     )
 }
 

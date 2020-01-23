@@ -1,11 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.scss';
 import Form from './components/Form/Form';
+import Member from './components/Members/Member';
 
 function App() {
+
+  const [members, setMembers]= useState([
+    {
+      name: '',
+      role: '',
+      school: '',
+    }
+  ])
+
+  const addNewMember= member =>{
+    const newMember= setMembers([...members, member]);
+  };
+
   return (
     <div className="App">
-      <Form/>
+      <Form addNewMember={addNewMember} />
+      <Member members={members}/>
     </div>
   );
 }
