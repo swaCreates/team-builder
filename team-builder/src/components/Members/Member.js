@@ -6,9 +6,16 @@ function Member(props) {
 
 
     return (
-        <Card className='card'>
-           
-        </Card>
+        <div className='containerTwo'>
+
+            {props.members.map(member =>{
+               return <Card className='card'>
+                    <h1 className='memberh1'> Name: {member.name}</h1>
+                    <p>Role: {member.role}</p>
+                    <p>School/Cohort: {member.school}</p>
+                </Card>
+            })}
+        </div>
     )
 }
 

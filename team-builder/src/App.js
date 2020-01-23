@@ -7,9 +7,9 @@ function App() {
 
   const [members, setMembers]= useState([
     {
-      name: '',
-      role: '',
-      school: '',
+      name: 'John Doe',
+      role: 'Placeholder',
+      school: 'Lambda',
     }
   ])
 
